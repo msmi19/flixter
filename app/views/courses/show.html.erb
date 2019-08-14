@@ -16,6 +16,11 @@
       <% end %>
     </div>
 
+    <div class="row">
+      <% image_tag @course.image.url, class: 'img-fluid' unless @course.image.url.nil? %>
+    </div>
+
+
     <div class="col-sm-8 col-12">
       <%= @course.description %>
     </div>
