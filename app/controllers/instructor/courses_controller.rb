@@ -4,7 +4,6 @@ class Instructor::CoursesController < ApplicationController
 
   def new
     @course = Course.new
-    @image = Image.new
   end
 
   def create
