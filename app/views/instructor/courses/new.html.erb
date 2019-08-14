@@ -10,4 +10,14 @@
     <br />
   <% end %>
   <br />
+
+
+<h2>Add a new Image</h2>
+  <%= simple_form_for @image, url: instructor_courses_path do |f| %>
+    <%= f.input :image %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+  <br />
 </div>
