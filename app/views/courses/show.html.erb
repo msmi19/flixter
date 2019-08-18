@@ -1,6 +1,5 @@
 <br />
-
-<div class="booyah-box col-10 offset-1">
+  <div class="booyah-box col-10 offset-1">
   <h1><%= @course.title %></h1>
   <br />
   <div class="row">
@@ -8,7 +7,6 @@
       <span class="badge badge-default">
         <%= number_to_currency @course.cost %>
       </span>
-
       <% if current_user && current_user == @course.user %>
         <br />
         <br />
@@ -17,7 +15,7 @@
     </div>
 
     <div class="row">
-      <% image_tag @course.image.url, class: 'img-fluid' unless @course.image.url.nil? %>
+      <%= image_tag @course.image.url, class: 'img-fluid' unless @course.image.url.nil? %>
     </div>
 
 
