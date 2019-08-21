@@ -9,7 +9,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-   def enrolled_in?(course)
+  def enrolled_in?(course)
     return enrolled_courses.include?(course)
   end
 
