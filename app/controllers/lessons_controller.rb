@@ -5,6 +5,10 @@ class LessonsController < ApplicationController
   def show
   end
 
+
+  def update
+  end
+  
   private
 
 
@@ -19,5 +23,8 @@ class LessonsController < ApplicationController
     @current_lesson ||= Lesson.find(params[:id])
   end
 
-
+  def lesson_params
+    params.require(:lesson).permit(:title, :subtitle, :video)
+  end
+  
 end
